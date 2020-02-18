@@ -30,9 +30,9 @@ module.exports = {
     bio: 'Hi there, I"m Freeborn Charles ... ',
     contacts: {
       email: 'charles.eteure@gmail.com',
-      twitter: 'https://twitter.com/charliecodes',
-      github: 'https://github.com/charlesfreeborn',
-      linkedin: 'https://www.linkedin.com/in/charleseteure/',
+      twitter: 'charliecodes',
+      github: 'charlesfreeborn',
+      linkedin: 'charleseteure/',
     }
   }
 };
