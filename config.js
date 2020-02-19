@@ -3,12 +3,12 @@
 module.exports = {
   url: 'https://lumen.netlify.com',
   pathPrefix: '/',
-  title: 'Blog by John Doe',
-  subtitle: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+  title: 'Freeborn Charles Blog',
+  subtitle: 'Public Learning and my thoughts on modern web development.',
   copyright: '© All rights reserved.',
   disqusShortname: '',
   postsPerPage: 4,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'UA-158726724-1',
   useKatex: false,
   menu: [
     {
@@ -18,32 +18,17 @@ module.exports = {
     {
       label: 'About me',
       path: '/pages/about'
-    },
-    {
-      label: 'Contact me',
-      path: '/pages/contacts'
     }
   ],
   author: {
-    name: 'John Doe',
-    photo: '/photo.jpg',
-    bio: 'Pellentesque odio nisi, euismod in, pharetra a, ultricies in, diam. Sed arcu.',
+    name: 'Freeborn Charles',
+    photo: '/CharlesFreeborn.jpg',
+    bio: "Hi there, I'm Freeborn Charles, Front-End Developer, Technical Writer and Developer communities builder. I have a background in Computer Science..."
     contacts: {
-      email: '',
-      facebook: '#',
-      telegram: '#',
-      twitter: '#',
-      github: '#',
-      rss: '',
-      vkontakte: '',
-      linkedin: '#',
-      instagram: '#',
-      line: '',
-      gitlab: '',
-      weibo: '',
-      codepen: '',
-      youtube: '',
-      soundcloud: '',
+      email: 'charles.eteure@gmail.com',
+      twitter: 'https://twitter.com/charliecodes',
+      github: 'https://github.com/charlesfreeborn',
+      linkedin: 'https://www.linkedin.com/in/charleseteure/',
     }
   }
 };
