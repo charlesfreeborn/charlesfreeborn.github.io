@@ -23,7 +23,7 @@ module.exports = {
   author: {
     name: 'Freeborn Charles',
     photo: '/CharlesFreeborn.jpg',
-    bio: "Hi there, I'm Freeborn Charles, Front-End Developer, Technical Writer and Developer communities builder. I have a background in Computer Science..."
+    bio: "Hi there, I'm Freeborn Charles, Front-End Developer, Technical Writer and Developer communities builder. I have a background in Computer Science...",
     contacts: {
       email: 'charles.eteure@gmail.com',
       twitter: 'https://twitter.com/charliecodes',
