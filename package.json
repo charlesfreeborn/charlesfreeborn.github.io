@@ -6,6 +6,7 @@
     "develop": "gatsby develop",
     "start": "gatsby develop",
     "build": "gatsby build",
+    "deploy": "gatsby clean && gatsby build && gh-pages d -public",
     "clean": "gatsby clean"
   },
   "dependencies": {
