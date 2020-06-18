@@ -22,3 +22,17 @@ module.exports = {
     ],
   },
 }
+
+// module.exports = {
+//   plugins: [`gatsby-plugin-sharp`, 
+//   `gatsby-transformer-sharp`,
+//   {
+//     resolve: `gatsby-source-filesystem`,
+//     options: {
+//       path: `${__dirname}/src/data/`,
+//       // path: `/Users/charlesfreeborn/Documents/GitHub/charlesfreeborn.github.io/content/assets`,
+//     },
+//   },
+// ],
+  
+// }
