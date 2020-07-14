@@ -4,6 +4,12 @@ module.exports = {
       resolve: `gatsby-theme-blog`,
       options: {},
     },
+    {
+        resolve: `gatsby-plugin-canonical-urls`,
+        options: {
+          siteUrl: `https://www.freeborncharles.com`,
+        },
+    },
   ],
   // Customize your site metadata:
   siteMetadata: {
@@ -29,7 +35,7 @@ module.exports = {
 //   {
 //     resolve: `gatsby-source-filesystem`,
 //     options: {
-//       path: `${__dirname}/src/data/`,
+//       path: `${__dirname}/assets/`,
 //       // path: `/Users/charlesfreeborn/Documents/GitHub/charlesfreeborn.github.io/content/assets`,
 //     },
 //   },
