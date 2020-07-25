@@ -3,7 +3,7 @@ module.exports = {
     title: `Freeborn Charles Blog`,
     author: {
       name: `Charles freeborn`,
-      summary: `who lives and works in San Francisco building useful things.`,
+      summary: `a front-end developer and technical writer.`,
     },
     description: `My cogitations on the modern web development - JavaScript, React, Gatsby and the JAMstack`,
     siteUrl: `https://www.freeborncharles.com`,
@@ -60,7 +60,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-analytics`,
       options: {
-        //trackingId: `ADD YOUR TRACKING ID HERE`,
+        trackingId: `UA-159043694-1`,
       },
     },
     `gatsby-plugin-feed`,
@@ -73,7 +73,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#663399`,
         display: `minimal-ui`,
-        icon: `content/assets/gatsby-icon.png`,
+        icon: `content/assets/profile-pic.jpg`,
       },
     },
     `gatsby-plugin-react-helmet`,

@@ -1,8 +1,10 @@
 ---
 title: What is GraphQL? - A high level overview
 date: 2020-04-23
-description: "Hello World"
+description: "A simplied overview of GraphQL"
 ---
+
+# Introducing GraphQL
 
 In 2012, Facebook in its bid to solve some of the challenges inherent with REST like over-fetching and under-fectching of data, created the GraphQL specification.
 
