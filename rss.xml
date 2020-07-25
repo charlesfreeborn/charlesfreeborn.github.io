@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Freeborn Charles Blog]]></title><description><![CDATA[My cogitations on the modern web development - JavaScript, React, Gatsby and the JAMstack]]></description><link>https://www.freeborncharles.com</link><generator>GatsbyJS</generator><lastBuildDate>Sat, 25 Jul 2020 15:20:07 GMT</lastBuildDate><item><title><![CDATA[What is CSS? A simplified introduction to CSS]]></title><description><![CDATA[What is CSS - Cascading Style Sheets? In the absence of styling, browsers interpret HTML in its default state - color of texts will be black…]]></description><link>https://www.freeborncharles.com/what-is-css/</link><guid isPermaLink="false">https://www.freeborncharles.com/what-is-css/</guid><pubDate>Thu, 18 Jun 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h2&gt;What is CSS - Cascading Style Sheets?&lt;/h2&gt;
+&lt;p&gt;In the absence of styling, browsers interpret HTML in its default state - color of texts will be black, background will be white, headings will be bigger, as expected over regular texts.&lt;/p&gt;
+&lt;p&gt;CSS - Cascading Style Sheets - is the language for handling the look and feel of web pages. CSS handles how web pages appear to users, that is the presentation and accessibility of the document to users. &lt;/p&gt;
+&lt;p&gt;CSS can be used for basic styling of texts, to complex effects like animations. For example, CSS can be used to define color, font-size, and/or background of websites created in a markup language (HTML) document.&lt;/p&gt;
+&lt;h2&gt;CSS Syntax&lt;/h2&gt;
+&lt;p&gt;CSS syntax takes the form of a rule-based language. You define rules stating how styles should be applied to particular element(s) on a web page.&lt;/p&gt;
+&lt;p&gt;The syntax consist of &lt;code class=&quot;language-text&quot;&gt;selector(s)&lt;/code&gt;, and &lt;code class=&quot;language-text&quot;&gt;property: value;&lt;/code&gt; pair which is referred to as declaration.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;selector {property: value;}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;For clarity and ease of reading, it is recommended to write your CSS like so.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;selector {
+          property: value;
+         }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;We can have more than one &lt;code class=&quot;language-text&quot;&gt;property: value;&lt;/code&gt; pair in a CSS rule. And this will we call a declaration block. 
+Let’s assume that you want the heading of your web page to be of text blue and a font size of 6em. You will achieve this in CSS, writing the rule as a declaration block, like so.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;h1 {
+    color: blue;
+    font-size: 6em;
+   }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;And when we say CSS is a rule-based language, what do we mean? It implies that we start with a selector and in the code sample above, the selector is the HTML element &lt;code class=&quot;language-text&quot;&gt;&amp;lt;h1&amp;gt;&lt;/code&gt; that the rule will affect. The curly braces &lt;code class=&quot;language-text&quot;&gt;{}&lt;/code&gt; holds one or more declarations. The property is the CSS rule, whilevalue is the value to be assigned to the property - how we want the property to be affected.&lt;/p&gt;
+&lt;p&gt;And for the code sample above, our &lt;code class=&quot;language-text&quot;&gt;property: value;&lt;/code&gt; declaration is respectively &lt;code class=&quot;language-text&quot;&gt;color: blue;&lt;/code&gt; and &lt;code class=&quot;language-text&quot;&gt;font-size: 6em;&lt;/code&gt;. 
+Properties in CSS, accept values that are consistent with them. A color property will accept or take color values.&lt;/p&gt;
+&lt;h2&gt;Comments in CSS&lt;/h2&gt;
+&lt;p&gt;Comments - non executable piece of code - in CSS can be written like so.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;/* This is a single line comment in CSS */
+
+
+/* 
+This is also a multi-line
+comment in CSS
+*/&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Whatever is written inside of &lt;code class=&quot;language-text&quot;&gt;/* */&lt;/code&gt; is noted as a comment and will not be interpreted by CSS. &lt;/p&gt;
+&lt;p&gt;And some of the reasons, why we use comments in programming is for clarity of purpose, for our future reference or other developers who may be reading our code or working on the project with us.&lt;/p&gt;
+&lt;h2&gt;Applying CSS in a web application - HTML document&lt;/h2&gt;
+&lt;p&gt;The earlier part of this article focused on defining CSS and its syntax, but CSS is meant to work closely with markup documents like HTML. 
+So how do we apply CSS to a web app - HTML document?&lt;/p&gt;
+&lt;h3&gt;1. Inline Style&lt;/h3&gt;
+&lt;p&gt;A single HTML element can be styled, by applying CSS inside the style  attribute of the HTML element. &lt;/p&gt;
+&lt;p&gt;Let’s assume that you want the heading in your web page to be a warning text with the color of red. You can use inline style to achieve that like so.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang = &amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+   &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+   &amp;lt;title&amp;gt;CSS Example - Inline Style&amp;lt;/title&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+   &amp;lt;h1 style=&amp;quot;color: red;&amp;quot;&amp;gt;Inline Style&amp;lt;/h1&amp;gt;
+   &amp;lt;p&amp;gt;It is not recommended to use CSS like this. That is inline styling&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here is the code sample in &lt;a href=&quot;https://codepen.io/freeborncharles/pen/eYJBGLg&quot;&gt;Codepen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;It is not recommend to use CSS like this because of the difficulty in maintenance of the web app, as a required change to the style, will require a lots of CSS edits on the page.&lt;/p&gt;
+&lt;h3&gt;2. Internal (Embedded) Styles&lt;/h3&gt;
+&lt;p&gt;In internal styling, both HTML and CSS is found in a single page. &lt;/p&gt;
+&lt;p&gt;You apply CSS to an HTML document by putting the &lt;code class=&quot;language-text&quot;&gt;&amp;lt;style&amp;gt;&lt;/code&gt; element, in the &lt;code class=&quot;language-text&quot;&gt;&amp;lt;head&amp;gt;&lt;/code&gt; of the HTML document. 
+Here is how.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang = &amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+&amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+&amp;lt;title&amp;gt;CSS Example - Internal Style&amp;lt;/title&amp;gt;
+&amp;lt;head&amp;gt;
+ &amp;lt;style&amp;gt;
+   body{
+     width: 960px;
+     margin: auto;
+     background: lightblue;
+   }
+  
+   h1{
+     color: blue;
+   }
+ &amp;lt;/style&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+  &amp;lt;h1&amp;gt;Internal Styling Sample&amp;lt;/h1&amp;gt;
+  &amp;lt;p&amp;gt;You can also style your web page using internal styling as shown.&amp;lt;/p&amp;gt;
+&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here is the code sample in &lt;a href=&quot;https://codepen.io/freeborncharles/pen/gOPLXYN&quot;&gt;Codepen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Internal styling is better than inline style, but the drawback for this method, is working on a web app with multiple pages - the developer will have to style every page associated with the app internally, which comes at a high cost of maintaining the site.&lt;/p&gt;
+&lt;h3&gt;3. External Styles&lt;/h3&gt;
+&lt;p&gt;Applying the principle of separation of concern of the core web technologies - HTML, CSS and JavaScript - where HTML is for content/structure, CSS for presentation and JavaScript for interactivity/behaviour with the user, we can use this principle to style multiple web pages in an app, using a CSS file.&lt;/p&gt;
+&lt;p&gt;CSS file ends with the &lt;code class=&quot;language-text&quot;&gt;.css&lt;/code&gt; extension.&lt;/p&gt;
+&lt;p&gt;You apply a &lt;code class=&quot;language-text&quot;&gt;.css&lt;/code&gt; file to an HTML document using the &lt;code class=&quot;language-text&quot;&gt;&amp;lt;link&amp;gt;&lt;/code&gt; element like this, &lt;code class=&quot;language-text&quot;&gt;&amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;main.css&amp;quot;&amp;gt;&lt;/code&gt; and this will be in the head of the HTML document. &lt;/p&gt;
+&lt;p&gt;Here is an example, first the HTML document.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;&amp;lt;!DOCTYPE html&amp;gt;
+&amp;lt;html lang=&amp;quot;en&amp;quot;&amp;gt;
+&amp;lt;head&amp;gt;
+  &amp;lt;meta charset=&amp;quot;utf-8&amp;quot;&amp;gt;
+  &amp;lt;title&amp;gt;What is CSS?&amp;lt;/title&amp;gt;
+  &amp;lt;link rel=&amp;quot;stylesheet&amp;quot; href=&amp;quot;main.css&amp;quot;&amp;gt;
+&amp;lt;/head&amp;gt;
+&amp;lt;body&amp;gt;
+  &amp;lt;h1&amp;gt;External Styling Sample&amp;lt;/h1&amp;gt;
+  &amp;lt;p&amp;gt;This is a sample page styled using external style sheets.&amp;lt;/p&amp;gt;&amp;lt;/body&amp;gt;
+&amp;lt;/html&amp;gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Next the &lt;code class=&quot;language-text&quot;&gt;.css&lt;/code&gt; file.&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;body{
+  margin: auto;
+  width: 960px;
+  background: #C9F3F3;
+}
+
+h1{
+  color: #9B59B6;
+}
+
+p{
+  color: #9B59B6;
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Here is the code sample in &lt;a href=&quot;https://codepen.io/freeborncharles/pen/KKVNyjQ&quot;&gt;Codepen&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;The above code sample, assumes that the main.css file is in the same directory (folder) as the HTML file. Do note that the href attribute of the HTML file must match the path of the .css file, for the linking.&lt;/p&gt;
+&lt;h2&gt;Conclusion&lt;/h2&gt;
+&lt;p&gt;This is the first in the series of articles, I hope to write, covering the core fundamentals of CSS. &lt;/p&gt;
+&lt;p&gt;And if you find this article interesting, please share.&lt;/p&gt;
+&lt;p&gt;You can find me on &lt;a href=&quot;https://twitter.com/charliecodes&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[What is GraphQL? - A high level overview]]></title><description><![CDATA[In 2012, Facebook in its bid to solve some of the challenges inherent with REST like over-fetching and under-fectching of data, created the…]]></description><link>https://www.freeborncharles.com/graphql/</link><guid isPermaLink="false">https://www.freeborncharles.com/graphql/</guid><pubDate>Thu, 23 Apr 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;In 2012, Facebook in its bid to solve some of the challenges inherent with REST like over-fetching and under-fectching of data, created the GraphQL specification.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://graphql.org/&quot;&gt;GraphQL&lt;/a&gt; at its most fundamental level is a language for querying APIs and a server-side runtime for running queries using a type system, which is defined using the Schema Definition Language (SDL) for data - giving client the data that it requests from an API. Think of GraphQL as an application layer query language, just as SQL is a data layer query language.&lt;/p&gt;
+&lt;p&gt;GraphQL is currently being managed by a community of software developers - since it was open-sourced in 2015. One of the big wins for GraphQL is that it is self-documenting.&lt;/p&gt;
+&lt;p&gt;A GraphQL service is created by defining types and fields, and providing functions for each field on the types. But how do we go about defining these types and fields? We take a look at some core concepts in answering this question.&lt;/p&gt;
+&lt;h2&gt;Core Concepts of GraphQL&lt;/h2&gt;
+&lt;p&gt;GraphQL is centred on some basic concepts like schema, mutation, subscription, and resolver function.&lt;/p&gt;
+&lt;h3&gt;The Schema&lt;/h3&gt;
+&lt;p&gt;In GraphQL, a service is created through the definition of types and fields using the Schema Definition Language - SDL. This implies that GraphQL is strongly typed. The Schema helps to define the capability of an API and how clients can make requests to the data. Schema also serves as a contract between servers and clients. It’s worth noting that the schema defines root types for the entry point of the API.&lt;/p&gt;
+&lt;p&gt;Here is an example on how you use schema to create a type and fields -&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;type User {
+            id: ID!
+            name: String!
+          }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The above code sample means we created a User type with two fields -  id and name, consisting of ID and String types. The exclamation ! implies that the field is required.&lt;/p&gt;
+&lt;h3&gt;Mutation&lt;/h3&gt;
+&lt;p&gt;Mutation in GraphQL is used to handle changes to data. There are three basic kinds of mutations - creating new data, updating existing data and deleting existing data. &lt;/p&gt;
+&lt;p&gt;Use the mutation keyword to create or make changes to data like so -&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;mutation {
+          createCustomer(name: &amp;quot;Charles&amp;quot;, gender: &amp;quot;Male&amp;quot;){
+                         name
+                         gender
+                         }
+        }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Subscription&lt;/h3&gt;
+&lt;p&gt;With subscription, clients can subscribe to an event, and maintain a connection to the server - when the event is triggered, the server sends the data to the client.&lt;/p&gt;
+&lt;p&gt;Here is an example -&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;subscription {
+             newPerson{
+                       name
+                       gender
+                      }
+            }&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;h3&gt;Resolver Function&lt;/h3&gt;
+&lt;p&gt;The resolver function aids in the delivery of data when a query is made.  It works in such a way that the received query is first checked to ensure it refers to only the types and fields that has been defined by the schema. &lt;/p&gt;
+&lt;p&gt;And here is where the resolver function comes in - helping to provide the result in JSON.&lt;/p&gt;
+&lt;p&gt;Here is an example -&lt;/p&gt;
+&lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;text&quot;&gt;&lt;pre class=&quot;language-text&quot;&gt;&lt;code class=&quot;language-text&quot;&gt;// The Query
+{
+    me{
+        firstName
+      }
+}
+
+// JSON result
+{
+    &amp;quot;me&amp;quot;: {
+        &amp;quot;firstName&amp;quot;: &amp;quot;Charles&amp;quot;
+    }
+}&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You can find me on &lt;a href=&quot;https://twitter.com/charliecodes&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item><item><title><![CDATA[Hello World - Introducing the Freeborn Charles Blog]]></title><description><![CDATA[Hello world, Welcome to my blog - The Freeborn Charles Blog. Here I will be sharing my thoughts and learnings on the modern web development…]]></description><link>https://www.freeborncharles.com/hello-world/</link><guid isPermaLink="false">https://www.freeborncharles.com/hello-world/</guid><pubDate>Mon, 24 Feb 2020 00:00:00 GMT</pubDate><content:encoded>&lt;p&gt;Hello world,&lt;/p&gt;
+&lt;p&gt;Welcome to my blog - The Freeborn Charles Blog. Here I will be sharing my thoughts and learnings on the modern web development - JavaScript, React, Gatsby and the JAMstack.&lt;/p&gt;
+&lt;p&gt;I’m particularly interested in JavaScript and the ecosystem. And so will be starting the blog with a series of articles on the core fundamentals of the JavaScript language.&lt;/p&gt;
+&lt;p&gt;I have a background in Computer Science, Front-End Web development, technical writing and building of developer communities - currently leading the Google Developer Group, GDG Warri and the Facebook Developer Circles, Warri, both in Nigeria.&lt;/p&gt;
+&lt;p&gt;My transition into technical writing was influenced by my work with the freeCodeCamp - I was a volunteer editor for the freeCodeCamp for over one and a half years. &lt;/p&gt;
+&lt;h2&gt;What to expect from me?&lt;/h2&gt;
+&lt;p&gt;You should expect to see articles on the modern web development. I’d be writing on the following -&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;JavaScript&lt;/li&gt;
+&lt;li&gt;React&lt;/li&gt;
+&lt;li&gt;Gatsby&lt;/li&gt;
+&lt;li&gt;The JAMstack&lt;/li&gt;
+&lt;li&gt;Python&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Thanks for visiting and keep an eye on this blog.&lt;/p&gt;
+&lt;p&gt;You can write me on charles.eteure@gmail.com and find me on &lt;a href=&quot;https://twitter.com/charliecodes&quot;&gt;Twitter&lt;/a&gt;&lt;/p&gt;</content:encoded></item></channel></rss>
