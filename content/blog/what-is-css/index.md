@@ -4,7 +4,7 @@ date: 2020-06-18
 description: "CSS - Cascading Style Sheets"
 ---
 
-# What is CSS - Cascading Style Sheets?
+## What is CSS - Cascading Style Sheets?
 
 In the absence of styling, browsers interpret HTML in its default state - color of texts will be black, background will be white, headings will be bigger, as expected over regular texts.
 
