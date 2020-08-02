@@ -2,13 +2,22 @@ module.exports = {
   siteMetadata: {
     title: `Freeborn Charles Blog`,
     author: {
-      name: `Charles freeborn`,
+      name: `Charles Freeborn`,
       summary: `a front-end developer and technical writer.`,
     },
     description: `My cogitations on the modern web development - JavaScript, React, Gatsby and the JAMstack`,
     siteUrl: `https://www.freeborncharles.com`,
     social: {
       twitter: `charliecodes`,
+      facebook: `ceteure`,
+      github: `charlesfreeborn`
+    },
+    socialShare: {
+      twitter: {
+        handle: `charliecodes`,
+        website: `https://freeborncharles.com`
+      },
+      facebook: `ceteure`,
       github: `charlesfreeborn`
     },
   },

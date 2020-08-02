@@ -27,5 +27,3 @@ You should expect to see articles on the modern web development. I'd be writing 
 * Python
 
 Thanks for visiting and keep an eye on this blog.
-
-You can write me on charles.eteure@gmail.com and find me on [Twitter](https://twitter.com/charliecodes)

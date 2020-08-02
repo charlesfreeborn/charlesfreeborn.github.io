@@ -29,6 +29,8 @@ const Bio = () => {
           }
           social {
             twitter
+            facebook
+            github
           }
         }
       }
@@ -57,11 +59,21 @@ const Bio = () => {
         }}
       />
       <p>
-        Written by <strong>{author.name}</strong> {author.summary}
+         Welcome to my digital garden where I share my learnings and cogitations on the modern web development - JavaScript and its ecosystem, React, Gatsby, JAMstack - all written by <strong>{author.name}</strong> {author.summary}
         {` `}
-        <a href={`https://twitter.com/${social.twitter}`}>
-          You should follow him on Twitter
+        <span style={{display: 'block', 'margin-right': '3px'}}>Follow me on:</span>
+        <a href={`https://twitter.com/${social.twitter}`} target={`_blank`}>
+            Twitter
+        </a> 
+        {/* <span style={{margin: '0 3px 0 3px'}}>|</span>
+        <a href={`https://www.facebook.com/${social.facebook}`}>
+            Facebook
+        </a> */}
+        <span style={{margin: '0 3px 0 3px'}}>|</span>
+        <a href={`https://github.com/${social.github}`} target={`_blank`} >
+             GitHub 
         </a>
+        
       </p>
     </div>
   )

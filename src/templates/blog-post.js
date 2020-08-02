@@ -3,13 +3,14 @@ import { Link, graphql } from "gatsby"
 
 import Bio from "../components/bio"
 import Layout from "../components/layout"
+import BioShare from "../components/bioshare"
 import SEO from "../components/seo"
 import { rhythm, scale } from "../utils/typography"
 
 const BlogPostTemplate = ({ data, pageContext, location }) => {
   const post = data.markdownRemark
   const siteTitle = data.site.siteMetadata.title
-  const { previous, next } = pageContext
+  const { previous, next, slug } = pageContext
 
   return (
     <Layout location={location} title={siteTitle}>
@@ -43,12 +44,8 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
             marginBottom: rhythm(1),
           }}
         />
-        <footer>
-          <Bio />
-        </footer>
-      </article>
-
-      <nav>
+        <BioShare title={post.frontmatter.title} slug={slug} />
+       <nav>
         <ul
           style={{
             display: `flex`,
@@ -74,6 +71,12 @@ const BlogPostTemplate = ({ data, pageContext, location }) => {
           </li>
         </ul>
       </nav>
+
+      </article>
+      <footer>
+          <Bio />
+      </footer>
+      
     </Layout>
   )
 }

@@ -18,13 +18,13 @@ CSS syntax takes the form of a rule-based language. You define rules stating how
 
 The syntax consist of `selector(s)`, and `property: value;` pair which is referred to as declaration.
 
-```
+```css
 selector {property: value;}
 ```
 
 For clarity and ease of reading, it is recommended to write your CSS like so.
 
-```
+```css
 selector {
           property: value;
          }
@@ -33,7 +33,7 @@ selector {
 We can have more than one `property: value;` pair in a CSS rule. And this will we call a declaration block. 
 Let's assume that you want the heading of your web page to be of text blue and a font size of 6em. You will achieve this in CSS, writing the rule as a declaration block, like so.
 
-```
+```css
 h1 {
     color: blue;
     font-size: 6em;
@@ -48,7 +48,7 @@ Properties in CSS, accept values that are consistent with them. A color property
 ## Comments in CSS
 Comments - non executable piece of code - in CSS can be written like so.
 
-```
+```css
 /* This is a single line comment in CSS */
 
 
@@ -72,7 +72,7 @@ A single HTML element can be styled, by applying CSS inside the style  attribute
 
 Let's assume that you want the heading in your web page to be a warning text with the color of red. You can use inline style to achieve that like so.
 
-```
+```html
 <!DOCTYPE html>
 <html lang = "en">
 <head>
@@ -97,7 +97,7 @@ In internal styling, both HTML and CSS is found in a single page. 
 You apply CSS to an HTML document by putting the `<style>` element, in the `<head>` of the HTML document. 
 Here is how.
 
-```
+```html
 <!DOCTYPE html>
 <html lang = "en">
 <head>
@@ -137,7 +137,7 @@ You apply a `.css` file to an HTML document using the `<link>` element like thi
 
 Here is an example, first the HTML document.
 
-```
+```html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -153,7 +153,7 @@ Here is an example, first the HTML document.
 
 Next the `.css` file.
 
-```
+```css
 body{
   margin: auto;
   width: 960px;
@@ -179,4 +179,4 @@ This is the first in the series of articles, I hope to write, covering the core 
 
 And if you find this article interesting, please share.
 
-You can find me on [Twitter](https://twitter.com/charliecodes)
+

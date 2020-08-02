@@ -21,7 +21,7 @@ GraphQL is centred on some basic concepts like schema, mutation, subscription, a
 In GraphQL, a service is created through the definition of types and fields using the Schema Definition Language - SDL. This implies that GraphQL is strongly typed. The Schema helps to define the capability of an API and how clients can make requests to the data. Schema also serves as a contract between servers and clients. It's worth noting that the schema defines root types for the entry point of the API.
 
 Here is an example on how you use schema to create a type and fields -
-```
+```graphql
 type User {
             id: ID!
             name: String!
@@ -34,7 +34,7 @@ The above code sample means we created a User type with two fields -  id and
 Mutation in GraphQL is used to handle changes to data. There are three basic kinds of mutations - creating new data, updating existing data and deleting existing data. 
 
 Use the mutation keyword to create or make changes to data like so -
-```
+```graphql
 mutation {
           createCustomer(name: "Charles", gender: "Male"){
                          name
@@ -48,7 +48,7 @@ mutation {
 With subscription, clients can subscribe to an event, and maintain a connection to the server - when the event is triggered, the server sends the data to the client.
 
 Here is an example -
-```
+```graphql
 subscription {
              newPerson{
                        name
@@ -64,7 +64,7 @@ And here is where the resolver function comes in - helping to provide the re
 
 Here is an example -
 
-```
+```graphql
 // The Query
 {
     me{
@@ -80,4 +80,3 @@ Here is an example -
 }
 ```
 
-You can find me on [Twitter](https://twitter.com/charliecodes)
