@@ -2,6 +2,7 @@
 title: What is CSS? A simplified introduction to CSS
 date: 2020-06-18
 description: "CSS - Cascading Style Sheets"
+featuredImage: ./webdev-css.jpg
 ---
 
 ## What is CSS - Cascading Style Sheets?

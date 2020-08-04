@@ -1,7 +1,8 @@
 ---
 title: Understanding Basic CSS Selectors
 date: 2020-08-03
-description: Introducing CSS Selectors, selector lists and basic CSS selector types
+description: "Introducing CSS Selectors, selector lists and basic CSS selector types"
+featuredImage: ./css-main.jpg
 ---
 # Introduction to CSS Selectors
 How do you determine (target) what part or section of a HTML document that needs to be styled? You can achieve this, by using `CSS selectors`. So then what is a `selector`? 
@@ -15,6 +16,7 @@ selector {property: value;}
 Now the selector from the syntax above, can be a HTML element/tag like `<p>` with `property/value` pair like ` {color: green}`. 
 
 This can be written like so. 
+![Hopper The Rabbit](./css-main.jpg)
 
 ``` css
 p{

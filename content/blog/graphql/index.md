@@ -2,6 +2,7 @@
 title: What is GraphQL? - A high level overview
 date: 2020-04-23
 description: "A simplied overview of GraphQL"
+featuredImage: ./graphql-featured.jpg
 ---
 
 # Introducing GraphQL
@@ -63,15 +64,17 @@ The resolver function aids in the delivery of data when a query is made.  It w
 And here is where the resolver function comes in - helping to provide the result in JSON.
 
 Here is an example -
+The query
 
 ```graphql
-// The Query
 {
     me{
         firstName
       }
 }
-
+```
+The JSON 
+```json
 // JSON result
 {
     "me": {

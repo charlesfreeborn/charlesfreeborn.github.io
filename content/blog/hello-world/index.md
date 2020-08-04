@@ -2,6 +2,7 @@
 title: Hello World - Introducing the Freeborn Charles Blog
 date: 2020-02-24
 description: "Modern Web Development - JavaScript, React, Gatsby and the JAMstack."
+featuredImage: ./CharlesFreeborn.jpg
 ---
 
 # Welcome to the Freeborn Charles Blog
