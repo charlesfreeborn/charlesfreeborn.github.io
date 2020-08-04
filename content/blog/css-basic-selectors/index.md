@@ -15,9 +15,7 @@ selector {property: value;}
 ```
 Now the selector from the syntax above, can be a HTML element/tag like `<p>` with `property/value` pair like ` {color: green}`. 
 
-This can be written like so. 
-![Hopper The Rabbit](./css-main.jpg)
-
+This can be written like so.
 ``` css
 p{
     color: green;
