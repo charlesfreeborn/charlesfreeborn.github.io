@@ -1,42 +1,10 @@
-<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Freeborn Charles Blog]]></title><description><![CDATA[My cogitations on the modern web development - JavaScript, React, Gatsby and the JAMstack]]></description><link>https://www.freeborncharles.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Aug 2020 19:25:34 GMT</lastBuildDate><item><title><![CDATA[Understanding Basic CSS Selectors]]></title><description><![CDATA[Introduction to CSS Selectors How do you determine (target) what part or section of a HTML document that needs to be styled? You can achieve…]]></description><link>https://www.freeborncharles.com/css-basic-selectors/</link><guid isPermaLink="false">https://www.freeborncharles.com/css-basic-selectors/</guid><pubDate>Mon, 03 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Introduction to CSS Selectors&lt;/h1&gt;
+<?xml version="1.0" encoding="UTF-8"?><rss xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0"><channel><title><![CDATA[Freeborn Charles Blog]]></title><description><![CDATA[My cogitations on the modern web development - JavaScript, React, Gatsby and the JAMstack]]></description><link>https://www.freeborncharles.com</link><generator>GatsbyJS</generator><lastBuildDate>Tue, 04 Aug 2020 19:29:13 GMT</lastBuildDate><item><title><![CDATA[Understanding Basic CSS Selectors]]></title><description><![CDATA[Introduction to CSS Selectors How do you determine (target) what part or section of a HTML document that needs to be styled? You can achieve…]]></description><link>https://www.freeborncharles.com/css-basic-selectors/</link><guid isPermaLink="false">https://www.freeborncharles.com/css-basic-selectors/</guid><pubDate>Mon, 03 Aug 2020 00:00:00 GMT</pubDate><content:encoded>&lt;h1&gt;Introduction to CSS Selectors&lt;/h1&gt;
 &lt;p&gt;How do you determine (target) what part or section of a HTML document that needs to be styled? You can achieve this, by using &lt;code class=&quot;language-text&quot;&gt;CSS selectors&lt;/code&gt;. So then what is a &lt;code class=&quot;language-text&quot;&gt;selector&lt;/code&gt;? &lt;/p&gt;
 &lt;p&gt;At the most fundamental level, CSS selectors are used to define or target the element we wish to style. &lt;/p&gt;
 &lt;p&gt;Every CSS rule-set begins with a selector, telling the browser the element the rule should be applied to.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;selector&lt;/span&gt; &lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;token property&quot;&gt;property&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; value&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 &lt;p&gt;Now the selector from the syntax above, can be a HTML element/tag like &lt;code class=&quot;language-text&quot;&gt;&amp;lt;p&amp;gt;&lt;/code&gt; with &lt;code class=&quot;language-text&quot;&gt;property/value&lt;/code&gt; pair like &lt;code class=&quot;language-text&quot;&gt;{color: green}&lt;/code&gt;. &lt;/p&gt;
-&lt;p&gt;This can be written like so.
-&lt;span
-      class=&quot;gatsby-resp-image-wrapper&quot;
-      style=&quot;position: relative; display: block; margin-left: auto; margin-right: auto; max-width: 590px; &quot;
-    &gt;
-      &lt;a
-    class=&quot;gatsby-resp-image-link&quot;
-    href=&quot;/static/147665eb670fcc432530c1201aa6d8de/93719/css-main.jpg&quot;
-    style=&quot;display: block&quot;
-    target=&quot;_blank&quot;
-    rel=&quot;noopener&quot;
-  &gt;
-    &lt;span
-    class=&quot;gatsby-resp-image-background-image&quot;
-    style=&quot;padding-bottom: 66.89189189189189%; position: relative; bottom: 0; left: 0; background-image: url(&apos;data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAANABQDASIAAhEBAxEB/8QAFwAAAwEAAAAAAAAAAAAAAAAAAAECBf/EABUBAQEAAAAAAAAAAAAAAAAAAAAB/9oADAMBAAIQAxAAAAHFUgyRP//EABYQAQEBAAAAAAAAAAAAAAAAABABEf/aAAgBAQABBQKOv//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQMBAT8BP//EABQRAQAAAAAAAAAAAAAAAAAAABD/2gAIAQIBAT8BP//EABQQAQAAAAAAAAAAAAAAAAAAACD/2gAIAQEABj8CX//EABkQAQADAQEAAAAAAAAAAAAAAAEAEBEhQf/aAAgBAQABPyFc9jWgmrX/2gAMAwEAAgADAAAAELj/AP/EABURAQEAAAAAAAAAAAAAAAAAABBB/9oACAEDAQE/EIf/xAAUEQEAAAAAAAAAAAAAAAAAAAAQ/9oACAECAQE/ED//xAAaEAEAAgMBAAAAAAAAAAAAAAABABEQIUEx/9oACAEBAAE/EKQLo6CMHxHty4JV2VKXWP/Z&apos;); background-size: cover; display: block;&quot;
-  &gt;&lt;/span&gt;
-  &lt;img
-        class=&quot;gatsby-resp-image-image&quot;
-        alt=&quot;Hopper The Rabbit&quot;
-        title=&quot;Hopper The Rabbit&quot;
-        src=&quot;/static/147665eb670fcc432530c1201aa6d8de/1c72d/css-main.jpg&quot;
-        srcset=&quot;/static/147665eb670fcc432530c1201aa6d8de/a80bd/css-main.jpg 148w,
-/static/147665eb670fcc432530c1201aa6d8de/1c91a/css-main.jpg 295w,
-/static/147665eb670fcc432530c1201aa6d8de/1c72d/css-main.jpg 590w,
-/static/147665eb670fcc432530c1201aa6d8de/a8a14/css-main.jpg 885w,
-/static/147665eb670fcc432530c1201aa6d8de/fbd2c/css-main.jpg 1180w,
-/static/147665eb670fcc432530c1201aa6d8de/93719/css-main.jpg 4000w&quot;
-        sizes=&quot;(max-width: 590px) 100vw, 590px&quot;
-        style=&quot;width:100%;height:100%;margin:0;vertical-align:middle;position:absolute;top:0;left:0;&quot;
-        loading=&quot;lazy&quot;
-      /&gt;
-  &lt;/a&gt;
-    &lt;/span&gt;&lt;/p&gt;
+&lt;p&gt;This can be written like so.&lt;/p&gt;
 &lt;div class=&quot;gatsby-highlight&quot; data-language=&quot;css&quot;&gt;&lt;pre class=&quot;language-css&quot;&gt;&lt;code class=&quot;language-css&quot;&gt;&lt;span class=&quot;token selector&quot;&gt;p&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;{&lt;/span&gt;
     &lt;span class=&quot;token property&quot;&gt;color&lt;/span&gt;&lt;span class=&quot;token punctuation&quot;&gt;:&lt;/span&gt; green&lt;span class=&quot;token punctuation&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;token punctuation&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
