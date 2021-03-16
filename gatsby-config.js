@@ -10,15 +10,15 @@ module.exports = {
     social: {
       twitter: `charliecodes`,
       facebook: `ceteure`,
-      github: `charlesfreeborn`
+      github: `charlesfreeborn`,
     },
     socialShare: {
       twitter: {
         handle: `charliecodes`,
-        website: `https://freeborncharles.com`
+        website: `https://freeborncharles.com`,
       },
       facebook: `ceteure`,
-      github: `charlesfreeborn`
+      github: `charlesfreeborn`,
     },
   },
   plugins: [
@@ -96,4 +96,4 @@ module.exports = {
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,
   ],
-}
+};
