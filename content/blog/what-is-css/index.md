@@ -9,7 +9,7 @@ featuredImage: ./webdev-css.jpg
 
 In the absence of styling, browsers interpret HTML in its default state - color of texts will be black, background will be white, headings will be bigger, as expected over regular texts.
 
-CSS - Cascading Style Sheets - is the language for handling the look and feel of web pages. CSS handles how web pages appear to users, that is the presentation and accessibility of the document to users. 
+CSS - Cascading Style Sheets - is the language for handling the look and feel of web pages. CSS handles how web pages appear to users, that is the presentation and accessibility of the document to users.
 
 CSS can be used for basic styling of texts, to complex effects like animations. For example, CSS can be used to define color, font-size, and/or background of websites created in a markup language (HTML) document.
 
@@ -20,15 +20,17 @@ CSS syntax takes the form of a rule-based language. You define rules stating how
 The syntax consist of `selector(s)`, and `property: value;` pair which is referred to as declaration.
 
 ```css
-selector {property: value;}
+selector {
+  property: value;
+}
 ```
 
 For clarity and ease of reading, it is recommended to write your CSS like so.
 
 ```css
 selector {
-          property: value;
-         }
+  property: value;
+}
 ```
 
 We can have more than one `property: value;` pair in a CSS rule. And this will we call a declaration block. 
@@ -36,9 +38,9 @@ Let's assume that you want the heading of your web page to be of text blue and a
 
 ```css
 h1 {
-    color: blue;
-    font-size: 6em;
-   }
+  color: blue;
+  font-size: 6em;
+}
 ```
 
 And when we say CSS is a rule-based language, what do we mean? It implies that we start with a selector and in the code sample above, the selector is the HTML element `<h1>` that the rule will affect. The curly braces `{}` holds one or more declarations. The property is the CSS rule, whilevalue is the value to be assigned to the property - how we want the property to be affected.
@@ -47,18 +49,19 @@ And for the code sample above, our `property: value;` declaration is respectivel
 Properties in CSS, accept values that are consistent with them. A color property will accept or take color values.
 
 ## Comments in CSS
+
 Comments - non executable piece of code - in CSS can be written like so.
 
 ```css
 /* This is a single line comment in CSS */
-
 
 /* 
 This is also a multi-line
 comment in CSS
 */
 ```
-Whatever is written inside of `/* */` is noted as a comment and will not be interpreted by CSS. 
+
+Whatever is written inside of `/* */` is noted as a comment and will not be interpreted by CSS.
 
 And some of the reasons, why we use comments in programming is for clarity of purpose, for our future reference or other developers who may be reading our code or working on the project with us.
 
@@ -69,21 +72,21 @@ So how do we apply CSS to a web app - HTML document?
 
 ### 1. Inline Style
 
-A single HTML element can be styled, by applying CSS inside the style  attribute of the HTML element. 
+A single HTML element can be styled, by applying CSS inside the style attribute of the HTML element.
 
 Let's assume that you want the heading in your web page to be a warning text with the color of red. You can use inline style to achieve that like so.
 
 ```html
 <!DOCTYPE html>
-<html lang = "en">
-<head>
-   <meta charset="utf-8">
-   <title>CSS Example - Inline Style</title>
-</head>
-<body>
-   <h1 style="color: red;">Inline Style</h1>
-   <p>It is not recommended to use CSS like this. That is inline styling</p>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CSS Example - Inline Style</title>
+  </head>
+  <body>
+    <h1 style="color: red;">Inline Style</h1>
+    <p>It is not recommended to use CSS like this. That is inline styling</p>
+  </body>
 </html>
 ```
 
@@ -93,7 +96,7 @@ It is not recommend to use CSS like this because of the difficulty in maintenanc
 
 ### 2. Internal (Embedded) Styles
 
-In internal styling, both HTML and CSS is found in a single page. 
+In internal styling, both HTML and CSS is found in a single page.
 
 You apply CSS to an HTML document by putting the `<style>` element, in the `<head>` of the HTML document. 
 Here is how.
@@ -111,7 +114,7 @@ Here is how.
      margin: auto;
      background: lightblue;
    }
-  
+
    h1{
      color: blue;
    }
@@ -134,39 +137,40 @@ Applying the principle of separation of concern of the core web technologies -
 
 CSS file ends with the `.css` extension.
 
-You apply a `.css` file to an HTML document using the `<link>` element like this, `<link rel="stylesheet" href="main.css">` and this will be in the head of the HTML document. 
+You apply a `.css` file to an HTML document using the `<link>` element like this, `<link rel="stylesheet" href="main.css">` and this will be in the head of the HTML document.
 
 Here is an example, first the HTML document.
 
 ```html
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>What is CSS?</title>
-  <link rel="stylesheet" href="main.css">
-</head>
-<body>
-  <h1>External Styling Sample</h1>
-  <p>This is a sample page styled using external style sheets.</p></body>
+  <head>
+    <meta charset="utf-8" />
+    <title>What is CSS?</title>
+    <link rel="stylesheet" href="main.css" />
+  </head>
+  <body>
+    <h1>External Styling Sample</h1>
+    <p>This is a sample page styled using external style sheets.</p>
+  </body>
 </html>
 ```
 
 Next the `.css` file.
 
 ```css
-body{
+body {
   margin: auto;
   width: 960px;
-  background: #C9F3F3;
+  background: #c9f3f3;
 }
 
-h1{
-  color: #9B59B6;
+h1 {
+  color: #9b59b6;
 }
 
-p{
-  color: #9B59B6;
+p {
+  color: #9b59b6;
 }
 ```
 
@@ -176,8 +180,6 @@ The above code sample, assumes that the main.css file is in the same directory (
 
 ## Conclusion
 
-This is the first in the series of articles, I hope to write, covering the core fundamentals of CSS. 
+This is the first in the series of articles, I hope to write, covering the core fundamentals of CSS.
 
 And if you find this article interesting, please share.
-
-
