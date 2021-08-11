@@ -10,22 +10,24 @@
 /static/46d636e58622c15a36310f914acfee1a/0e329/webdev-css.jpg 1600w,
 /static/46d636e58622c15a36310f914acfee1a/21d0b/webdev-css.jpg 5184w" src="/static/46d636e58622c15a36310f914acfee1a/14b42/webdev-css.jpg" alt="" style="position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center"/></picture></noscript></div></header><section><h2>What is CSS - Cascading Style Sheets?</h2>
 <p>In the absence of styling, browsers interpret HTML in its default state - color of texts will be black, background will be white, headings will be bigger, as expected over regular texts.</p>
-<p>CSS - Cascading Style Sheets - is the language for handling the look and feel of web pages. CSS handles how web pages appear to users, that is the presentation and accessibility of the document to users. </p>
+<p>CSS - Cascading Style Sheets - is the language for handling the look and feel of web pages. CSS handles how web pages appear to users, that is the presentation and accessibility of the document to users.</p>
 <p>CSS can be used for basic styling of texts, to complex effects like animations. For example, CSS can be used to define color, font-size, and/or background of websites created in a markup language (HTML) document.</p>
 <h2>CSS Syntax</h2>
 <p>CSS syntax takes the form of a rule-based language. You define rules stating how styles should be applied to particular element(s) on a web page.</p>
 <p>The syntax consist of <code class="language-text">selector(s)</code>, and <code class="language-text">property: value;</code> pair which is referred to as declaration.</p>
-<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">selector</span> <span class="token punctuation">{</span><span class="token property">property</span><span class="token punctuation">:</span> value<span class="token punctuation">;</span><span class="token punctuation">}</span></code></pre></div>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">selector</span> <span class="token punctuation">{</span>
+  <span class="token property">property</span><span class="token punctuation">:</span> value<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
 <p>For clarity and ease of reading, it is recommended to write your CSS like so.</p>
 <div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">selector</span> <span class="token punctuation">{</span>
-          <span class="token property">property</span><span class="token punctuation">:</span> value<span class="token punctuation">;</span>
-         <span class="token punctuation">}</span></code></pre></div>
+  <span class="token property">property</span><span class="token punctuation">:</span> value<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
 <p>We can have more than one <code class="language-text">property: value;</code> pair in a CSS rule. And this will we call a declaration block. 
 Let’s assume that you want the heading of your web page to be of text blue and a font size of 6em. You will achieve this in CSS, writing the rule as a declaration block, like so.</p>
 <div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">h1</span> <span class="token punctuation">{</span>
-    <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
-    <span class="token property">font-size</span><span class="token punctuation">:</span> 6em<span class="token punctuation">;</span>
-   <span class="token punctuation">}</span></code></pre></div>
+  <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
+  <span class="token property">font-size</span><span class="token punctuation">:</span> 6em<span class="token punctuation">;</span>
+<span class="token punctuation">}</span></code></pre></div>
 <p>And when we say CSS is a rule-based language, what do we mean? It implies that we start with a selector and in the code sample above, the selector is the HTML element <code class="language-text">&lt;h1&gt;</code> that the rule will affect. The curly braces <code class="language-text">{}</code> holds one or more declarations. The property is the CSS rule, whilevalue is the value to be assigned to the property - how we want the property to be affected.</p>
 <p>And for the code sample above, our <code class="language-text">property: value;</code> declaration is respectively <code class="language-text">color: blue;</code> and <code class="language-text">font-size: 6em;</code>. 
 Properties in CSS, accept values that are consistent with them. A color property will accept or take color values.</p>
@@ -33,34 +35,33 @@ Properties in CSS, accept values that are consistent with them. A color property
 <p>Comments - non executable piece of code - in CSS can be written like so.</p>
 <div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token comment">/* This is a single line comment in CSS */</span>
 
-
 <span class="token comment">/* 
 This is also a multi-line
 comment in CSS
 */</span></code></pre></div>
-<p>Whatever is written inside of <code class="language-text">/* */</code> is noted as a comment and will not be interpreted by CSS. </p>
+<p>Whatever is written inside of <code class="language-text">/* */</code> is noted as a comment and will not be interpreted by CSS.</p>
 <p>And some of the reasons, why we use comments in programming is for clarity of purpose, for our future reference or other developers who may be reading our code or working on the project with us.</p>
 <h2>Applying CSS in a web application - HTML document</h2>
 <p>The earlier part of this article focused on defining CSS and its syntax, but CSS is meant to work closely with markup documents like HTML. 
 So how do we apply CSS to a web app - HTML document?</p>
 <h3>1. Inline Style</h3>
-<p>A single HTML element can be styled, by applying CSS inside the style  attribute of the HTML element. </p>
+<p>A single HTML element can be styled, by applying CSS inside the style attribute of the HTML element.</p>
 <p>Let’s assume that you want the heading in your web page to be a warning text with the color of red. You can use inline style to achieve that like so.</p>
 <div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span> <span class="token attr-value"><span class="token punctuation">=</span> <span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
-   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>CSS Example - Inline Style<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
-   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Inline Style<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
-   <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>It is not recommended to use CSS like this. That is inline styling<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>CSS Example - Inline Style<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token style-attr language-css"><span class="token attr-name"> <span class="token attr-name">style</span></span><span class="token punctuation">="</span><span class="token attr-value"><span class="token property">color</span><span class="token punctuation">:</span> red<span class="token punctuation">;</span></span><span class="token punctuation">"</span></span><span class="token punctuation">></span></span>Inline Style<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>It is not recommended to use CSS like this. That is inline styling<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre></div>
 <p>Here is the code sample in <a href="https://codepen.io/freeborncharles/pen/eYJBGLg">Codepen</a>.</p>
 <p>It is not recommend to use CSS like this because of the difficulty in maintenance of the web app, as a required change to the style, will require a lots of CSS edits on the page.</p>
 <h3>2. Internal (Embedded) Styles</h3>
-<p>In internal styling, both HTML and CSS is found in a single page. </p>
+<p>In internal styling, both HTML and CSS is found in a single page.</p>
 <p>You apply CSS to an HTML document by putting the <code class="language-text">&lt;style&gt;</code> element, in the <code class="language-text">&lt;head&gt;</code> of the HTML document. 
 Here is how.</p>
 <div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
@@ -75,7 +76,7 @@ Here is how.</p>
      <span class="token property">margin</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
      <span class="token property">background</span><span class="token punctuation">:</span> lightblue<span class="token punctuation">;</span>
    <span class="token punctuation">}</span>
-  
+
    <span class="token selector">h1</span><span class="token punctuation">{</span>
      <span class="token property">color</span><span class="token punctuation">:</span> blue<span class="token punctuation">;</span>
    <span class="token punctuation">}</span>
@@ -91,37 +92,38 @@ Here is how.</p>
 <h3>3. External Styles</h3>
 <p>Applying the principle of separation of concern of the core web technologies - HTML, CSS and JavaScript - where HTML is for content/structure, CSS for presentation and JavaScript for interactivity/behaviour with the user, we can use this principle to style multiple web pages in an app, using a CSS file.</p>
 <p>CSS file ends with the <code class="language-text">.css</code> extension.</p>
-<p>You apply a <code class="language-text">.css</code> file to an HTML document using the <code class="language-text">&lt;link&gt;</code> element like this, <code class="language-text">&lt;link rel=&quot;stylesheet&quot; href=&quot;main.css&quot;&gt;</code> and this will be in the head of the HTML document. </p>
+<p>You apply a <code class="language-text">.css</code> file to an HTML document using the <code class="language-text">&lt;link&gt;</code> element like this, <code class="language-text">&lt;link rel=&quot;stylesheet&quot; href=&quot;main.css&quot;&gt;</code> and this will be in the head of the HTML document.</p>
 <p>Here is an example, first the HTML document.</p>
 <div class="gatsby-highlight" data-language="html"><pre class="language-html"><code class="language-html"><span class="token doctype">&lt;!DOCTYPE html></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>html</span> <span class="token attr-name">lang</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>en<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>What is CSS?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>main.css<span class="token punctuation">"</span></span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
-<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>External Styling Sample<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
-  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>This is a sample page styled using external style sheets.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span><span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>head</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>meta</span> <span class="token attr-name">charset</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>utf-8<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>title</span><span class="token punctuation">></span></span>What is CSS?<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>title</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>link</span> <span class="token attr-name">rel</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>stylesheet<span class="token punctuation">"</span></span> <span class="token attr-name">href</span><span class="token attr-value"><span class="token punctuation">=</span><span class="token punctuation">"</span>main.css<span class="token punctuation">"</span></span> <span class="token punctuation">/></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>head</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>body</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>h1</span><span class="token punctuation">></span></span>External Styling Sample<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>h1</span><span class="token punctuation">></span></span>
+    <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;</span>p</span><span class="token punctuation">></span></span>This is a sample page styled using external style sheets.<span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>p</span><span class="token punctuation">></span></span>
+  <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>body</span><span class="token punctuation">></span></span>
 <span class="token tag"><span class="token tag"><span class="token punctuation">&lt;/</span>html</span><span class="token punctuation">></span></span></code></pre></div>
 <p>Next the <code class="language-text">.css</code> file.</p>
-<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">body</span><span class="token punctuation">{</span>
+<div class="gatsby-highlight" data-language="css"><pre class="language-css"><code class="language-css"><span class="token selector">body</span> <span class="token punctuation">{</span>
   <span class="token property">margin</span><span class="token punctuation">:</span> auto<span class="token punctuation">;</span>
   <span class="token property">width</span><span class="token punctuation">:</span> 960px<span class="token punctuation">;</span>
-  <span class="token property">background</span><span class="token punctuation">:</span> #C9F3F3<span class="token punctuation">;</span>
+  <span class="token property">background</span><span class="token punctuation">:</span> #c9f3f3<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token selector">h1</span><span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> #9B59B6<span class="token punctuation">;</span>
+<span class="token selector">h1</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #9b59b6<span class="token punctuation">;</span>
 <span class="token punctuation">}</span>
 
-<span class="token selector">p</span><span class="token punctuation">{</span>
-  <span class="token property">color</span><span class="token punctuation">:</span> #9B59B6<span class="token punctuation">;</span>
+<span class="token selector">p</span> <span class="token punctuation">{</span>
+  <span class="token property">color</span><span class="token punctuation">:</span> #9b59b6<span class="token punctuation">;</span>
 <span class="token punctuation">}</span></code></pre></div>
 <p>Here is the code sample in <a href="https://codepen.io/freeborncharles/pen/KKVNyjQ">Codepen</a>.</p>
 <p>The above code sample, assumes that the main.css file is in the same directory (folder) as the HTML file. Do note that the href attribute of the HTML file must match the path of the .css file, for the linking.</p>
 <h2>Conclusion</h2>
-<p>This is the first in the series of articles, I hope to write, covering the core fundamentals of CSS. </p>
+<p>This is the first in the series of articles, I hope to write, covering the core fundamentals of CSS.</p>
 <p>And if you find this article interesting, please share.</p></section><hr style="margin-bottom:1.75rem"/><div><ul style="list-style:none"><li><a style="width:20px;height:20px" href="https://twitter.com/share?text=What is CSS? A simplified introduction to CSS via @charliecodes&amp;url=https://freeborncharles.com/what-is-css/">Share on Twitter</a></li></ul></div><nav><ul style="display:flex;flex-wrap:wrap;justify-content:space-between;list-style:none;padding:0"><li><a rel="prev" href="/graphql/">← <!-- -->What is GraphQL? - A high level overview</a></li><li><a rel="next" href="/css-basic-selectors/">Understanding Basic CSS Selectors<!-- --> →</a></li></ul></nav></article><footer><div style="display:flex;margin-bottom:4.375rem"><div class=" gatsby-image-wrapper" style="position:relative;overflow:hidden;display:inline-block;width:50px;height:50px;margin-right:0.875rem;margin-bottom:0;min-width:50px;border-radius:100%"><img aria-hidden="true" src="data:image/jpeg;base64,/9j/2wBDABALDA4MChAODQ4SERATGCgaGBYWGDEjJR0oOjM9PDkzODdASFxOQERXRTc4UG1RV19iZ2hnPk1xeXBkeFxlZ2P/2wBDARESEhgVGC8aGi9jQjhCY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2NjY2P/wgARCAAUABQDASIAAhEBAxEB/8QAGAABAQEBAQAAAAAAAAAAAAAAAAQBBQP/xAAWAQEBAQAAAAAAAAAAAAAAAAABAAL/2gAMAwEAAhADEAAAAehH1Jy16gyk0wDN/8QAHRAAAgEEAwAAAAAAAAAAAAAAAQMCABESIRATMv/aAAgBAQABBQJmoJJ7bViJBCcKOiuV+Ge//8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAwEBPwEf/8QAFBEBAAAAAAAAAAAAAAAAAAAAIP/aAAgBAgEBPwEf/8QAGhABAAIDAQAAAAAAAAAAAAAAAQAQERIxYf/aAAgBAQAGPwJTsTKntYY7daaZ/8QAGhABAQEAAwEAAAAAAAAAAAAAAQARITFRQf/aAAgBAQABPyFvHPU9ebp3keFodCTlvUs4bJzZxM/lt//aAAwDAQACAAMAAAAQ3zCA/8QAFxEAAwEAAAAAAAAAAAAAAAAAAAEREP/aAAgBAwEBPxBNQu//xAAYEQADAQEAAAAAAAAAAAAAAAAAASEQMf/aAAgBAgEBPxBqkx9P/8QAHBABAAICAwEAAAAAAAAAAAAAAQARITFRYXHR/9oACAEBAAE/EMDYFAt3LW7grDZm+NwblfZVe6iczHMbGgNS3YsgdOhKO4mw7mERR2r9n//Z" alt="Charles Freeborn" style="position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;object-position:center;opacity:1;transition-delay:500ms;border-radius:50%"/><noscript><picture><source srcset="/static/27ccc27572d69f5c110f11f13197a18f/99438/profile-pic.jpg 1x,
 /static/27ccc27572d69f5c110f11f13197a18f/aba1d/profile-pic.jpg 1.5x,
 /static/27ccc27572d69f5c110f11f13197a18f/b315d/profile-pic.jpg 2x" /><img loading="lazy" width="50" height="50" srcset="/static/27ccc27572d69f5c110f11f13197a18f/99438/profile-pic.jpg 1x,
