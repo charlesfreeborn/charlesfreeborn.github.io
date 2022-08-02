@@ -29,7 +29,7 @@ Establishing trust on the blockchain entails -
 In summary, blockchain technology supports methods for a decentralized peer-to-peer system, a collective trust model, and a distributed immutable ledger of transaction records.
 
 ## Blockcahin and decentralized systems
-As a DLT, one of the benefits of the blockchain is the decentralized model. Blockchain operate in a trustless environment and with the decentralization model, there is no single point of failure.
+As a DLT, one of the benefits of the blockchain is the decentralized model. Blockchain operates in a trustless environment and with the decentralization model, there is no single point of failure.
 
 And herein lies the strength of blockchains.
 
@@ -95,7 +95,7 @@ A hash function or hashing transforms and maps an arbitrary length of input data
 
 This implies that hashing is taking an input of any length and producing an output of a fixed length.
 
-The hashing requirements stipulate that algorithm should be one-way function and it should be collision-free.
+The hashing requirements stipulate that an algorithm should be a one-way function and it should be collision-free.
 
 ### Six properties to consider a hash as secured
 
@@ -123,7 +123,7 @@ These six properties can be used to consider that a cryptographic hash function 
 3. Keeping data in blocks is still significantly high.
 
 ## Blockchain use cases
-1. Background check - education credetnails and criminal records.
+1. Background check - education credentails and criminal records.
 2. Secure document storage like home deeds, and will.
 3. Birth registries
 4. Land registries
