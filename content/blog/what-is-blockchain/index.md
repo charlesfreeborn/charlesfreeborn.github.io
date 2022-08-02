@@ -1,8 +1,7 @@
 ---
 title: What is Blockchain? A simplified introduction to Blockchain
-date: 2022-08-01
+date: 2022-08-02
 description: "I am sharing my learnings on the blockchain technology."
-# featuredImage: ./webdev-css.jpg
 ---
 # Introduction - What is a blockchain?
 
