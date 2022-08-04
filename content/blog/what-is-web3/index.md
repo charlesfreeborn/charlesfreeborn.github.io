@@ -4,7 +4,7 @@ date: 2022-08-04
 description: "I am sharing my learnings in public on the blockchain technology and web 3.0"
 featuredImage: ./web.jpeg
 ---
-# Introduction - The internet, society, and our lives
+## Introduction - The internet, society, and our lives
 
 The internet has undoubtedly played a significant role in our lives and communities over the past three decades. We can even argue that the internet is one of the greatest inventions of mankind. For it has changed (and will continue to change) the course of humanity forever.
 
