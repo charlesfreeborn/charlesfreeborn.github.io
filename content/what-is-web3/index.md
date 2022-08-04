@@ -1,6 +1,6 @@
 ---
 title: A high level overview of Web 3.0
-date: 2022-08-02
+date: 2022-08-04
 description: "I am sharing my learnings in public on web 3.0"
 featuredImage: ./web.jpeg
 ---
