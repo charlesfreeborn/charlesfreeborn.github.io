@@ -98,4 +98,4 @@ Web 3.0 is hinged on decentralization - herein, ownership is shared and isn't pl
 
 From the lens of monetary value accrued, decentralization is about moving money around to the people who create and the people who consume, and to the people maintaining and improving the protocol - network.
 
-This article was originally published on [here](https://dev.to/charliecodes/a-high-level-overview-of-web-30-4fid) on dev.to.
+This article was originally published on [here](https://dev.to/charliecodes/a-high-level-overview-of-web-30-4fid).
