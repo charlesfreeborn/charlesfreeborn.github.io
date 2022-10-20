@@ -28,7 +28,7 @@ Establishing trust on the blockchain entails -
 
 In summary, blockchain technology supports methods for a decentralized peer-to-peer system, a collective trust model, and a distributed immutable ledger of transaction records.
 
-## Blockcahin and decentralized systems
+## Blockchain and decentralized systems 
 As a DLT, one of the benefits of the blockchain is the decentralized model. Blockchain operates in a trustless environment and with the decentralization model, there is no single point of failure.
 
 And herein lies the strength of blockchains.
