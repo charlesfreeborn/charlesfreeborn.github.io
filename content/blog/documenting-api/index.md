@@ -74,7 +74,6 @@ Accept: {application/json}
 
 #### Response
 
-NOTE: Sometimes this information will be in an objects section and this section will just link it.
 
 | Element      | Description   |   Type  |    Notes | 
 | -----------    | ----------- | ------- |----------|
