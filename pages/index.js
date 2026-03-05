@@ -47,7 +47,23 @@ export default function Home({ allPostsData }) {
           web3 Warri
         </a>{" "}
         and web3 Warri Creative Hub. Former Technical Content Strategist at
-        Protocol Labs. Published at LogRocket and freeCodeCamp. Follow me on{" "}
+        Protocol Labs. Published at{" "}
+        <a
+          href="https://blog.logrocket.com/author/charlesfreeborn/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          LogRocket
+        </a>{" "}
+        and{" "}
+        <a
+          href="https://www.freecodecamp.org/news/understanding-the-javascript-call-stack-861e41ae61d4/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          freeCodeCamp
+        </a>
+        . Follow me on{" "}
         <a
           href="https://twitter.com/charliecodes"
           target="_blank"
