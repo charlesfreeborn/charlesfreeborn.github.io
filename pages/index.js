@@ -1,49 +1,68 @@
 // pages/index.js
-import { useState } from 'react';
-import Link from 'next/link';
-import Layout from '../components/Layout';
-import { getSortedPostsData } from '../lib/posts';
+import { useState } from "react";
+import Link from "next/link";
+import Layout from "../components/Layout";
+import { getSortedPostsData } from "../lib/posts";
 
 const CATEGORIES = [
-  { key: 'all',        label: 'All' },
-  { key: 'javascript', label: 'JavaScript' },
-  { key: 'css',        label: 'CSS' },
-  { key: 'web3',       label: 'Web3' },
-  { key: 'graphql',    label: 'GraphQL' },
-  { key: 'docs',       label: 'Docs & APIs' },
-  { key: 'personal',   label: 'Personal' },
+  { key: "all", label: "All" },
+  { key: "javascript", label: "JavaScript" },
+  { key: "css", label: "CSS" },
+  { key: "web3", label: "Web3" },
+  { key: "graphql", label: "GraphQL" },
+  { key: "docs", label: "Docs & APIs" },
+  { key: "personal", label: "Personal" },
 ];
 
 function formatDate(dateStr) {
-  if (!dateStr) return '';
+  if (!dateStr) return "";
   const d = new Date(dateStr);
-  return d.toLocaleDateString('en-US', { year: 'numeric', month: 'short', day: '2-digit' })
-    .replace(',', '');
+  return d
+    .toLocaleDateString("en-US", {
+      year: "numeric",
+      month: "short",
+      day: "2-digit",
+    })
+    .replace(",", "");
 }
 
 export default function Home({ allPostsData }) {
-  const [activecat, setActiveCat] = useState('all');
+  const [activecat, setActiveCat] = useState("all");
 
   const filtered = allPostsData.filter(
-    post => activecat === 'all' || post.category === activecat
+    (post) => activecat === "all" || post.category === activecat
   );
 
   return (
     <Layout>
       <p className="bio">
-        Front-end developer and technical writer. I write about the modern web —
-        JavaScript and its ecosystem, React, CSS, Web3, GraphQL, and the JAMstack,
-        all by <strong>Charles Freeborn</strong>. Follow me on{' '}
-        <a href="https://twitter.com/charliecodes" target="_blank" rel="noopener noreferrer">Twitter</a>
-        {' · '}
-        <a href="https://github.com/charlesfreeborn" target="_blank" rel="noopener noreferrer">GitHub</a>
+        Technical writer and protocol researcher studying distributed systems,
+        blockchain infrastructure, and Rust - bridging protocol engineering and
+        developer understanding. Founder{" "}
+        <a
+          href="https://web3warri.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          web3 Warri
+        </a>{" "}
+        and web3 Warri Creative Hub. Former Technical Content Strategist at
+        Protocol Labs. Published at LogRocket and freeCodeCamp. Follow me on{" "}
+        <a
+          href="https://twitter.com/charliecodes"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          X (formerly Twitter)
+        </a>
+        {" · "}
       </p>
 
       <nav className="categories" aria-label="Filter by category">
-        {CATEGORIES.map(cat => (
+        {CATEGORIES.map((cat) => (
           <button
             key={cat.key}
-            className={`cat-link${activecat === cat.key ? ' active' : ''}`}
+            className={`cat-link${activecat === cat.key ? " active" : ""}`}
             onClick={() => setActiveCat(cat.key)}
             aria-pressed={activecat === cat.key}
           >
@@ -53,7 +72,7 @@ export default function Home({ allPostsData }) {
       </nav>
 
       <ul className="posts-list">
-        {filtered.map(post => (
+        {filtered.map((post) => (
           <li key={post.slug} className="post-item">
             <span className="post-date">{formatDate(post.date)}</span>
             <Link href={`/posts/${post.slug}`} className="post-title-link">
