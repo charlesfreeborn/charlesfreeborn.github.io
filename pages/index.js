@@ -6,6 +6,8 @@ import { getSortedPostsData } from "../lib/posts";
 
 const CATEGORIES = [
   { key: "all", label: "All" },
+  { key: "distributed-systems", label: "Distributed Systems" },
+  { key: "protocol-research", label: "Protocol Research" },
   { key: "javascript", label: "JavaScript" },
   { key: "css", label: "CSS" },
   { key: "web3", label: "Web3" },
