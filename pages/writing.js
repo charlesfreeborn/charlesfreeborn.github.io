@@ -71,6 +71,19 @@ const PIECES = [
 
   // ── Personal site ──
   {
+    title:
+      "What Lamport's 1978 paper tells us about why Nakamoto chose the longest chain rule",
+    url: "/posts/lamport-nakamoto",
+    publication: "freeborncharles.com",
+    pubUrl: "/",
+    date: "2026-03-17",
+    description:
+      "A worked example of professional API documentation — endpoint reference, request/response examples, error codes, and writing principles for a developer audience.",
+    tags: ["distributed-systems", "protocol-research"],
+    featured: false,
+  },
+
+  {
     title: "Documenting a Sound File API for a Hypothetical Dating Site",
     url: "/posts/documenting-api",
     publication: "freeborncharles.com",
@@ -166,7 +179,19 @@ const SORTED_PIECES = [...PIECES].sort(
 );
 
 // ─── Tags ────────────────────────────────────────────────────────────────────
-const ALL_TAGS = ["All", "Explainer", "Tutorial", "API Docs", "Guide", "Web3"];
+const ALL_TAGS = [
+  "All",
+  "Explainer",
+  "Tutorial",
+  "API Docs",
+  "Guide",
+  "Web3",
+  "Distributed Systems",
+  "Protocol Research",
+  "Rust",
+  "Consensus",
+  "Artificial Intelligence",
+];
 
 // ─── Tag badge colours ───────────────────────────────────────────────────────
 const TAG_COLORS = {
@@ -175,6 +200,15 @@ const TAG_COLORS = {
   "API Docs": { bg: "#fdf4ff", color: "#9333ea", border: "#e9d5ff" },
   Guide: { bg: "#fff7ed", color: "#ea580c", border: "#fed7aa" },
   Web3: { bg: "#fefce8", color: "#ca8a04", border: "#fde68a" },
+  "Distributed Systems": { bg: "#f0f9ff", color: "#0369a1", border: "#bae6fd" },
+  "Protocol Research": { bg: "#fdf4ff", color: "#7e22ce", border: "#e9d5ff" },
+  Rust: { bg: "#fff1f2", color: "#be123c", border: "#fecdd3" },
+  Consensus: { bg: "#f0fdf4", color: "#15803d", border: "#bbf7d0" },
+  "Artificial Intelligence": {
+    bg: "#f0fdf4",
+    color: "#15803d",
+    border: "#bbf7d0",
+  },
 };
 
 function formatDate(dateStr) {
