@@ -13,7 +13,7 @@ While financial institutions - the trusted third party - helped address the doub
  
 For example, there is the exposure of too much personal information  - why do I need to input all personal information about myself to make a purchase online or send money electronically?
 
-Nakamoto proposed a solution to the double-spend problem the 2008 without a central authority, when the Bitcoin whitepaper was published. But before 2008, we have to go back to 1978, thirty years before Nakamoto’s solution, to understand that the formal logic required to order events in a distributed system was first defined by a computer scientist named Leslie Lamport.
+Nakamoto proposed a solution to the double-spend problem in 2008 without a central authority, when the Bitcoin whitepaper was published. But before 2008, we have to go back to 1978, thirty years before Nakamoto’s solution, to understand that the formal logic required to order events in a distributed system was first defined by a computer scientist named Leslie Lamport.
 
 Lamport proposed the use of logical clocks and event ordering over physical time, to determine the sequence of events in a distributed system. This he referred to as the “happened before” relation, a --> b.
 ## Lamport laid the foundation for solving the ordering problem in a distributed system
