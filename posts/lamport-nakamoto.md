@@ -100,6 +100,6 @@ Lamport’s tie-breaker lacked Sybil resistance - the creation of multiple proce
 ## Conclusion
 Nakamoto used economic incentive to solve the ordering problem which Lamport solved with formal algorithms. And this is the reason we are able to send money electronically without a trusted third party or a central authority, effectively solving the double-spend problem.
 
-Every consensus mechanism built after the Bitcoin whitepaper, whether [Tendermint](https://tendermint.com/), [Casper](https://www.casper.network/), or [HotStuff](https://tokens-economy.gitbook.io/consensus/chain-based-pbft-and-bft-based-proof-of-stake/hotstuff), is a different answer to the same ordering problem Lamport defined in 1978.
+Every serious consensus mechanism built after the Bitcoin whitepaper, whether [Tendermint consensus without mining](https://tendermint.com/static/docs/tendermint.pdf), [Casper](https://medium.com/@jonchoi/ethereum-casper-101-7a851a4f1eb0), or [HotStuff - BFT Consensus](https://tokens-economy.gitbook.io/consensus/chain-based-pbft-and-bft-based-proof-of-stake/hotstuff), is a different answer to the same ordering problem Lamport defined in 1978.
 
 If Lamport’s 1978 paper assumed honest participants through the permissioned process ID, and Nakamoto’s 2008 Bitcoin whitepaper assumed actively malicious nodes, what happens when the economic incentives that keep Nakamoto’s system honest break down?
