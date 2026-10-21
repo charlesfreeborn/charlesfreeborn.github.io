@@ -12,19 +12,42 @@ function formatDateLong(dateStr) {
 export default function Post({ postData }) {
   return (
     <Layout title={postData.title} description={postData.excerpt}>
-      <div className="article-wrapper" style={{ maxWidth: 'var(--content-width)', margin: '0 auto' }}>
+      <div
+        className="article-wrapper"
+        style={{ maxWidth: "var(--content-width)", margin: "0 auto" }}
+      >
         <Link href="/" className="article-back">
           All posts
         </Link>
 
         <div className="article-meta">
           <span>{formatDateLong(postData.date)}</span>
-          {postData.category && postData.category !== 'general' && (
-            <span style={{ textTransform: 'capitalize' }}>{postData.category}</span>
+          {postData.category && postData.category !== "general" && (
+            <span style={{ textTransform: "capitalize" }}>
+              {postData.category}
+            </span>
           )}
         </div>
 
         <h1 className="article-title">{postData.title}</h1>
+
+        {/* madke some changes here for the cover image. */}
+
+        {postData.excerpt && (
+          <p className="article-excerpt">{postData.excerpt}</p>
+        )}
+
+        {postData.coverImage && (
+          <div className="article-cover">
+            <img
+              src={postData.coverImage}
+              alt={postData.title}
+              className="article-cover-img"
+            />
+          </div>
+        )}
+
+        {/* change ends here. */}
 
         <article
           className="article-body"
